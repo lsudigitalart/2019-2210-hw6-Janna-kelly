@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>p5.js</title>
+    <script src="p5.min.js"></script>
+  
+    <script language="javascript">
+      var imgs = ["images/CCbase.png", "images/cc1.png", "images/cc2.png", "images/cc3.png"];
+  
+      function changeImage() {
+          document.getElementById("imgClickAndChange").src = imgs[0];
+          imgs.push(imgs.shift())
+      }
+  </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="slideshow">
+          <img alt="slideshow" src="1.jpg" id="imgClickAndChange" onclick="changeImage()" />
+      </div>
+  </div>
+    
+  </body>
+</html>
